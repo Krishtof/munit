@@ -50,7 +50,8 @@ body {
   margin: 0 auto;
   margin-top: 74px;
   height: 70px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  min-height: 110px;
 }
 
 .content hr {

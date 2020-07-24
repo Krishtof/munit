@@ -22,7 +22,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 140px 20px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -43,15 +43,17 @@ body {
   opacity: .7;
 }
 
-.content .logo {
+.logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 80px;
   display: block;
   margin: 0 auto;
-  margin-top: 74px;
   height: 70px;
-  margin-bottom: 20px;
   min-height: 110px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 10;
 }
 
 .content hr {
@@ -106,6 +108,17 @@ margin-top: 10px;
     height: 500px;
     width: 780px;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 767px) {
+  .content {
+    padding-top: 180px;
+  }
+
+  .logo {
+    left: 50%;
+    margin-left: -40px;
   }
 }
 
